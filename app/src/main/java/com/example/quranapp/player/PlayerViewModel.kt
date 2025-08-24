@@ -29,6 +29,8 @@ class PlayerViewModel @Inject constructor(
 
     val player = playerManager.player
 
+    var notificationVisible = false
+
     var sliderModel by mutableStateOf<SliderModel>(SliderModel(0, 0))
 
     private val _isPlaying = MutableStateFlow(false)
@@ -81,11 +83,20 @@ class PlayerViewModel @Inject constructor(
         }
         player.addMediaItems(mediaItems)
         player.prepare()
-        val intent = Intent(context, AudioPlayerService::class.java)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            context.startForegroundService(intent)
-        } else {
-            context.startService(intent)
+        if (!notificationVisible){
+            val intent = Intent(context, AudioPlayerService::class.java)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                context.startForegroundService(intent)
+            } else {
+                context.startService(intent)
+            }
+            notificationVisible = true
+        }else{
+            AudioPlayerService.instance?.updateNotification(
+                playerManager.surahName ?: "Surah",
+                playerManager.readerName ?: "Reader",
+                player.isPlaying
+            )
         }
         player.playWhenReady = true
     }

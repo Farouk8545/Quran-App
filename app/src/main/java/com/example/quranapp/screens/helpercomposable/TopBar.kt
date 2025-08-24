@@ -20,6 +20,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -28,6 +29,7 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.quranapp.R
 import com.example.quranapp.api.viewmodel.ApiViewModel
+import com.example.quranapp.language.LanguageViewModel
 import com.example.quranapp.navigation.MainNavigationViewModel
 import com.example.quranapp.screens.model.Screens
 import com.example.quranapp.ui.theme.WarmGray
@@ -37,8 +39,17 @@ import com.example.quranapp.ui.theme.WarmGray
 fun TopBar(screenName: String){
     val navViewModel: MainNavigationViewModel = hiltViewModel()
     val apiViewModel: ApiViewModel = hiltViewModel()
+    val languageViewModel: LanguageViewModel = hiltViewModel()
 
     val textSurah by apiViewModel.textSurah.collectAsState()
+    val selectedLanguage by languageViewModel.selectedLanguage.collectAsState()
+
+    println(textSurah?.type)
+
+    val typeMap = mapOf<String, String>(
+        "meccan" to "مكّية",
+        "medinan" to "مدنية"
+    )
 
     TopAppBar (
         title = {
@@ -67,7 +78,10 @@ fun TopBar(screenName: String){
                     )
 
                     Text(
-                        text = textSurah?.revelationType ?: "revelationType",
+                        text =
+                            (if (selectedLanguage == "ar") typeMap[textSurah?.type ?: stringResource(R.string.revelation_type)]
+                             else textSurah?.type ?: stringResource(R.string.revelation_type))
+                             ?: stringResource(R.string.revelation_type),
                         fontWeight = FontWeight.Bold,
                         fontSize = 24.sp,
                         fontFamily = FontFamily(Font(R.font.amiri_quran))

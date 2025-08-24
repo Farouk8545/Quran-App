@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">تطبيق القرآن</string>
+    <string name="app_name">رفيق المؤمن</string>
     <string name="best_voices">افضل الصوتيات</string>
     <string name="home_screen">الرئيسية</string>
     <string name="now_Playing">مشغل الآن</string>
@@ -17,6 +17,12 @@
     <string name="settings">الاعدادات</string>
     <string name="language">اللغة</string>
     <string name="select_language">اختار اللغة</string>
+    <string name="font">اعدادات الخط</string>
+    <string name="select_font">اختار الخط</string>
+    <string name="small">صغير</string>
+    <string name="medium">متوسط</string>
+    <string name="large">كبير</string>
+    <string name="very_large">كبير جداً</string>
     <string name="sheikh_basfar">عبد الله بصفر</string>
     <string name="sheikh_sudais">عبدالرحمن السديس</string>
     <string name="sheikh_abdulsamad">عبدالباسط عبدالصمد</string>
@@ -54,4 +60,11 @@
     <string name="quran_duas">أدعية قرآنية</string>
     <string name="prophets_duas">أدعية الأنبياء</string>
     <string name="quran_completion_duas">دعاء ختم القرآن</string>
+    <string name="no_last_played">لم تقم بتشغيل اي سورة حتي الآن</string>
+    <string name="qibla_button">القبله</string>
+    <string name="location_access_denied">اسمح بالوصول للموقع لتحديد اتجاه القبله</string>
+    <string name="give_access">اسمح بالوصول</string>
+    <string name="give_camera_access">اسمح بالوصول للكاميرا لتتمكن من تحديد القبله بشكل افضل</string>
+    <string name="revelation_type">مكان نزولها</string>
+    <string name="surah_name">اسم السوره</string>
 </resources>

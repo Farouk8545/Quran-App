@@ -41,9 +41,10 @@ fun PlaylistsScreen(){
         ){
             LazyColumn {
                 items(edition?.data ?: emptyList()) { edition ->
-                    val readerName = if (selectedLanguage == "ar") edition.name else edition.englishName
-                    PlaylistCard(readerName) {
-                        navViewModel.backStack.add(Screens.QuranPlaylistScreen(readerName, edition.identifier))
+                    val readerNameAr = edition.name
+                    val readerNameEn = edition.englishName
+                    PlaylistCard(if (selectedLanguage == "ar") readerNameAr else readerNameEn) {
+                        navViewModel.backStack.add(Screens.QuranPlaylistScreen(readerNameAr, readerNameEn, edition.identifier))
                     }
                 }
             }

@@ -66,10 +66,11 @@ fun BottomNavBar(
                 },
                 label = { Text(stringResource(it.label)) },
                 colors = NavigationBarItemDefaults.colors(
-                    selectedIconColor = AppPurple,
+                    selectedIconColor = Color.White,
                     unselectedIconColor = Color.Black,
                     selectedTextColor = AppPurple,
-                    unselectedTextColor = Color.Black
+                    unselectedTextColor = Color.Black,
+                    indicatorColor = AppPurple,
                 )
             )
         }

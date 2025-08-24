@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedButton
@@ -18,7 +17,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -28,7 +26,6 @@ import com.example.quranapp.R
 import com.example.quranapp.navigation.MainNavigationViewModel
 import com.example.quranapp.screens.helpercomposable.BackgroundCanvas
 import com.example.quranapp.screens.model.Screens
-import com.example.quranapp.ui.theme.AppPurple
 
 @Composable
 fun DivisionsScreen(){
@@ -76,7 +73,7 @@ fun DivisionsScreen(){
 
             OutlinedButton (
                 onClick = {
-
+                    navViewModel.backStack.add(Screens.DuaaScreen)
                 },
                 modifier = Modifier.fillMaxWidth()
                     .padding(8.dp),
@@ -89,6 +86,25 @@ fun DivisionsScreen(){
             ) {
                 Text(
                     text = stringResource(R.string.duaa),
+                    fontSize = 16.sp
+                )
+            }
+
+            OutlinedButton (
+                onClick = {
+                    navViewModel.backStack.add(Screens.QiblaScreen)
+                },
+                modifier = Modifier.fillMaxWidth()
+                    .padding(8.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.White,
+                    contentColor = Color.Black
+                ),
+                shape = RoundedCornerShape(8.dp),
+                border = BorderStroke(1.dp, Color.Black)
+            ) {
+                Text(
+                    text = stringResource(R.string.qibla_button),
                     fontSize = 16.sp
                 )
             }

@@ -66,15 +66,11 @@ fun PlayerBottomSheet(
     }
 
     LaunchedEffect(Unit, surah) {
-        playerViewModel.play(surah?.data?.ayahs ?: emptyList())
-        playerViewModel.playerManager.surahName = surahName
-        playerViewModel.playerManager.readerName = readerName
-
-        AudioPlayerService.instance?.updateNotification(
-            surahName ?: "Surah",
-            readerName ?: "Reader",
-            playerViewModel.player.isPlaying
-        )
+        surah?.data?.ayahs.let {
+            playerViewModel.play(it ?: emptyList())
+            playerViewModel.playerManager.surahName = surahName
+            playerViewModel.playerManager.readerName = readerName
+        }
     }
 
     BottomSheetScaffold(
@@ -96,7 +92,10 @@ fun PlayerBottomSheet(
             }
         },
         topBar = {
-            if (navigationViewModel.backStack.lastOrNull() !is Screens.DisplayAzkarScreen){
+            if (
+                navigationViewModel.backStack.lastOrNull() !is Screens.DisplayAzkarScreen &&
+                navigationViewModel.backStack.lastOrNull() !is Screens.DisplayDuaaScreen
+                ){
                 navigationViewModel.backStack.lastOrNull()
                     ?.let { TopBar(screenName = stringResource(it.screenName)) }
                     ?: TopBar("")

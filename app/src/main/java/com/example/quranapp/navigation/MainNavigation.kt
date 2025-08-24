@@ -7,9 +7,12 @@ import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.ui.NavDisplay
 import com.example.quranapp.screens.AzkarScreen
 import com.example.quranapp.screens.DisplayAzkarScreen
+import com.example.quranapp.screens.DisplayDuaaScreen
 import com.example.quranapp.screens.DivisionsScreen
+import com.example.quranapp.screens.DuaaScreen
 import com.example.quranapp.screens.HomeScreen
 import com.example.quranapp.screens.PlaylistsScreen
+import com.example.quranapp.screens.QiblaScreen
 import com.example.quranapp.screens.QuranPlaylistScreen
 import com.example.quranapp.screens.QuranScreen
 import com.example.quranapp.screens.SettingsScreen
@@ -37,7 +40,7 @@ fun MainNavigation() {
                 DivisionsScreen()
             }
             entry <Screens.QuranPlaylistScreen>{
-                QuranPlaylistScreen(it.reader, it.identifier)
+                QuranPlaylistScreen(it.readerNameAr,it.readerNameEn,  it.identifier)
             }
             entry <Screens.TextQuranScreen>{
                 TextQuranScreen(it.surahNumber)
@@ -50,6 +53,15 @@ fun MainNavigation() {
             }
             entry <Screens.DisplayAzkarScreen>{
                 DisplayAzkarScreen(it.azkarList, it.azkarCategory)
+            }
+            entry <Screens.DuaaScreen>{
+                DuaaScreen()
+            }
+            entry <Screens.DisplayDuaaScreen>{
+                DisplayDuaaScreen(it.duaList, it.duaCategory)
+            }
+            entry <Screens.QiblaScreen>{
+                QiblaScreen()
             }
         }
     )

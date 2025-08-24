@@ -21,7 +21,7 @@ sealed class Screens(@StringRes internal val screenName: Int): NavKey{
     data object DivisionsScreen: Screens(R.string.division_screen)
 
     @Serializable
-    data class QuranPlaylistScreen(val reader: String, val identifier: String): Screens(R.string.quran_playlist_screen)
+    data class QuranPlaylistScreen(val readerNameAr: String, val readerNameEn: String, val identifier: String): Screens(R.string.quran_playlist_screen)
 
     @Serializable
     data class TextQuranScreen(val surahNumber: Int): Screens(R.string.quran_screen)
@@ -34,4 +34,13 @@ sealed class Screens(@StringRes internal val screenName: Int): NavKey{
 
     @Serializable
     data class DisplayAzkarScreen(val azkarList: List<SpecifiedAzkarModel>, val azkarCategory: Int): Screens(R.string.azkar)
+
+    @Serializable
+    data object DuaaScreen: Screens(R.string.duaa)
+
+    @Serializable
+    data class DisplayDuaaScreen(val duaList: List<SpecifiedAzkarModel>, val duaCategory: Int): Screens(R.string.duaa)
+
+    @Serializable
+    data object QiblaScreen: Screens(R.string.qibla_button)
 }

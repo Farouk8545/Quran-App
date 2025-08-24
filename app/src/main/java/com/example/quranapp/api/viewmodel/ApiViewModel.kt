@@ -12,11 +12,15 @@ import com.example.quranapp.api.models.azkar.SpecifiedAzkarModel
 import com.example.quranapp.api.models.duaa.DuaaModel
 import com.example.quranapp.api.models.edition.ApiEditionResponseModel
 import com.example.quranapp.api.models.meta.ApiMetaResponseModel
+import com.example.quranapp.api.models.quran.TextSurah
+import com.example.quranapp.api.models.quran.Verse
 import com.example.quranapp.api.models.surah.ApiSurahResponseModel
 import com.example.quranapp.api.models.textsurah.ApiTextSurahResponseModel
 import com.example.quranapp.api.models.textsurah.TextSurahModel
 import com.example.quranapp.api.repository.ApiRepository
+import com.example.quranapp.player.AudioPlayerService
 import com.example.quranapp.player.PlayerViewModel
+import com.google.common.reflect.TypeToken
 import com.google.gson.Gson
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -47,25 +51,27 @@ class ApiViewModel @Inject constructor(
     private val  _surahState = MutableStateFlow<ApiSurahResponseModel?>(null)
     var surahState = _surahState.asStateFlow()
 
-    private val _textSurah = MutableStateFlow<TextSurahModel?>(null)
+    private val _textSurah = MutableStateFlow<TextSurah?>(null)
     val textSurah = _textSurah.asStateFlow()
 
     private val _edition = MutableStateFlow<ApiEditionResponseModel?>(null)
     var edition = _edition.asStateFlow()
 
-    var metaData: ApiMetaResponseModel
+    lateinit var metaData: ApiMetaResponseModel
 
-    private var azkar: FullAzkarModel
+    private lateinit var azkar: FullAzkarModel
 
-    private var textQuran: ApiTextSurahResponseModel
+    private lateinit var textQuran: List<TextSurah>
 
-    private var duaa: DuaaModel
+    private lateinit var duaa: DuaaModel
 
     init {
-        azkar = loadAzkar()
-        textQuran = loadTextQuran()
-        metaData = loadMeta()
-        duaa = loadDuaa()
+        viewModelScope.launch {
+            azkar = loadAzkar()
+            textQuran = loadTextQuran()
+            metaData = loadMeta()
+            duaa = loadDuaa()
+        }
     }
 
     fun getSurah(surah: Int, edition: String?){
@@ -75,6 +81,12 @@ class ApiViewModel @Inject constructor(
                 val response = repository.getSurah(surah, edition)
                 if (response.isSuccessful){
                     _surahState.value = response.body()
+                    if (showBottomSheet == false){
+                        AudioPlayerService.instance?.createNotification(
+                            _surahState.value?.data?.name ?: "Surah",
+                            _surahState.value?.data?.edition?.name ?: "Reader",
+                            true)
+                    }
                     showBottomSheet = true
                 }else{
                     errorMessage = response.message()
@@ -90,7 +102,8 @@ class ApiViewModel @Inject constructor(
     }
 
     fun getTextSurah(surah: Int){
-        _textSurah.value = textQuran.data.surahs[surah - 1]
+        _textSurah.value = null
+        _textSurah.value = textQuran[surah - 1]
     }
 
     fun getEditions(
@@ -124,9 +137,12 @@ class ApiViewModel @Inject constructor(
         return Gson().fromJson(jsonString, FullAzkarModel::class.java)
     }
 
-    fun loadTextQuran(): ApiTextSurahResponseModel{
+    fun loadTextQuran(): List<TextSurah> {
         val jsonString = context.assets.open("quran.json").bufferedReader().use { it.readText() }
-        return Gson().fromJson(jsonString, ApiTextSurahResponseModel::class.java)
+
+        val listType = object : TypeToken<List<TextSurah>>() {}.type
+
+        return Gson().fromJson(jsonString, listType)
     }
 
     fun loadMeta(): ApiMetaResponseModel{

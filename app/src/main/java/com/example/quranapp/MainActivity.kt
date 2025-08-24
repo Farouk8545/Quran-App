@@ -67,7 +67,10 @@ class MainActivity : AppCompatActivity() {
                 Scaffold (
                     modifier = Modifier.fillMaxSize(),
                     bottomBar = {
-                        if (!isExpanded && navigationViewModel.backStack.lastOrNull() !is Screens.DisplayAzkarScreen){
+                        if (!isExpanded &&
+                            navigationViewModel.backStack.lastOrNull() !is Screens.DisplayAzkarScreen &&
+                            navigationViewModel.backStack.lastOrNull() !is Screens.DisplayDuaaScreen
+                            ){
                             BottomNavBar(
                                 currentScreen = navigationViewModel.backStack.lastOrNull(),
                             ) {
