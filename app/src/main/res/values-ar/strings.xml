@@ -67,4 +67,9 @@
     <string name="give_camera_access">اسمح بالوصول للكاميرا لتتمكن من تحديد القبله بشكل افضل</string>
     <string name="revelation_type">مكان نزولها</string>
     <string name="surah_name">اسم السوره</string>
+    <string name="meta_data_error_loading_message">خطأ في تحميل القراء</string>
+    <string name="surah_meta_data_error_loading_message">خطأ في تحميل اسم السوره</string>
+    <string name="next_error_message">أنت الان تستمع الي اخر سورة</string>
+    <string name="previous_error_message">أنت الان تستمع الي أول سورة</string>
+    <string name="no_active_playlist_error_message">لا يوجد قائمه تشغيل</string>
 </resources>

@@ -1,0 +1,326 @@
+{
+  "meta_data": [
+    {
+      "reciter_id": 2,
+      "reciter_name_ar": "أحمد الحواشي",
+      "reciter_name_en": "Akram Al Alaqimy",
+      "reciter_url_identifier": "Akram_AlAlaqimy_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/Alhawashi.jpg"
+    },
+    {
+      "reciter_id": 3,
+      "reciter_name_ar": "أحمد بن علي العجمي",
+      "reciter_name_en": "Ahmed ibn Ali al-Ajamy",
+      "reciter_url_identifier": "ahmed_ibn_ali_al_ajamy_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/ahmed_ibn_ali_al_ajamy.jpeg"
+    },
+    {
+      "reciter_id": 4,
+      "reciter_name_ar": "أحمد نعينع",
+      "reciter_name_en": "Ahmed Neana",
+      "reciter_url_identifier": "Ahmed_Neana_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/ahmed_neana.jpg"
+    },
+    {
+      "reciter_id": 5,
+      "reciter_name_ar": "أبو بكر الشاطري",
+      "reciter_name_en": "Abu Bakr Ash-Shaatree",
+      "reciter_url_identifier": "Abu_Bakr_Ash-Shaatree_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/abu_bakr_ash_shaatree.jpg"
+    },
+    {
+      "reciter_id": 6,
+      "reciter_name_ar": "أيمن سويد",
+      "reciter_name_en": "Ayman Sowaid",
+      "reciter_url_identifier": "Ayman_Sowaid_64kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/ayman_sowaid.jpg"
+    },
+    {
+      "reciter_id": 7,
+      "reciter_name_ar": "خالد عبد الله القحطاني",
+      "reciter_name_en": "Khalid Abdullah al-Qahtanee",
+      "reciter_url_identifier": "Khaalid_Abdullaah_al-Qahtaanee_192kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/khalid_abdullah_al_qahtanee.png"
+    },
+    {
+      "reciter_id": 8,
+      "reciter_name_ar": "خليفة الطنيجي",
+      "reciter_name_en": "Khalefa Al-Tunaiji",
+      "reciter_url_identifier": "khalefa_al_tunaiji_64kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/khalefa_al_tunaiji.jpeg"
+    },
+    {
+      "reciter_id": 9,
+      "reciter_name_ar": "سعد الغامدي",
+      "reciter_name_en": "Ghamadi",
+      "reciter_url_identifier": "Ghamadi_40kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/ghamadi.jpg"
+    },
+    {
+      "reciter_id": 10,
+      "reciter_name_ar": "سعود الشريم",
+      "reciter_name_en": "Saood bin Ibraaheem Ash-Shuraym",
+      "reciter_url_identifier": "Saood_ash-Shuraym_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/saood_bin_ibraaheem_ash_shuraym.png"
+    },
+    {
+      "reciter_id": 11,
+      "reciter_name_ar": "سهل ياسين",
+      "reciter_name_en": "Sahl_Yassin",
+      "reciter_url_identifier": "Sahl_Yassin_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/sahl_yassin.jpg"
+    },
+    {
+      "reciter_id": 12,
+      "reciter_name_ar": "صلاح البدير",
+      "reciter_name_en": "Salah Al Budair",
+      "reciter_url_identifier": "Salah_Al_Budair_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/salah_al_budair.jpg"
+    },
+    {
+      "reciter_id": 13,
+      "reciter_name_ar": "صلاح عبد الرحمن بو خاطر",
+      "reciter_name_en": "Salaah AbdulRahman Bukhatir",
+      "reciter_url_identifier": "Salaah_AbdulRahman_Bukhatir_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/salaah_abdulrahman_bukhatir.jpg"
+    },
+    {
+      "reciter_id": 14,
+      "reciter_name_ar": "عزيز عليلي",
+      "reciter_name_en": "Aziz Alili",
+      "reciter_url_identifier": "aziz_alili_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/aziz_alili.jpg"
+    },
+    {
+      "reciter_id": 15,
+      "reciter_name_ar": "مشاري راشد العفاسي",
+      "reciter_name_en": "Alafasy",
+      "reciter_url_identifier": "Alafasy_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/alafasy.jpg"
+    },
+    {
+      "reciter_id": 16,
+      "reciter_name_ar": "عبد الباسط عبد الصمد (تجويد)",
+      "reciter_name_en": "Abdul Basit Mujawwad",
+      "reciter_url_identifier": "Abdul_Basit_Mujawwad_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/abdul_basit.jpg"
+    },
+    {
+      "reciter_id": 17,
+      "reciter_name_ar": "عبد الباسط عبد الصمد (ترتيل)",
+      "reciter_name_en": "Abdul Basit Murattal",
+      "reciter_url_identifier": "Abdul_Basit_Murattal_192kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/abdul_basit.jpg"
+    },
+    {
+      "reciter_id": 18,
+      "reciter_name_ar": "عبد الباسط عبد الصمد (ورش)",
+      "reciter_name_en": "(Warsh) Abdul Basit",
+      "reciter_url_identifier": "warsh/warsh_Abdul_Basit_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/abdul_basit.jpg"
+    },
+    {
+      "reciter_id": 19,
+      "reciter_name_ar": "عبد الرحمن السديس",
+      "reciter_name_en": "Abdurrahmaan As-Sudais",
+      "reciter_url_identifier": "Abdurrahmaan As-Sudais_192kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/abdurrahmaan_as_sudais.jpg"
+    },
+    {
+      "reciter_id": 20,
+      "reciter_name_ar": "عبد الصمد (مستكشف القرآن)",
+      "reciter_name_en": "AbdulSamad QuranExplorer.Com",
+      "reciter_url_identifier": "AbdulSamad_64kbps_QuranExplorer.Com",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/abdulsamad_quranexplorer.com.png"
+    },
+    {
+      "reciter_id": 21,
+      "reciter_name_ar": "عبد الله البصفر",
+      "reciter_name_en": "Abdullah Basfar",
+      "reciter_url_identifier": "Abdullah_Basfar_192kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/abdullah_basfar.jpg"
+    },
+    {
+      "reciter_id": 22,
+      "reciter_name_ar": "عبد الله الجهني",
+      "reciter_name_en": "Abdullaah 3awwaad Al-Juhaynee",
+      "reciter_url_identifier": "Abdullaah_3awwaad_Al-Juhaynee_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/abdullaah_3awwaad_al_juhaynee.jpg"
+    },
+    {
+      "reciter_id": 23,
+      "reciter_name_ar": "عبد الله المطرود",
+      "reciter_name_en": "Abdullah Matroud",
+      "reciter_url_identifier": "Abdullah_Matroud_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/abdullah_matroud.jpg"
+    },
+    {
+      "reciter_id": 24,
+      "reciter_name_ar": "علي الحاذق / الحذيفي",
+      "reciter_name_en": "Hudhaify",
+      "reciter_url_identifier": "Hudhaify_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/hudhaify.jpg"
+    },
+    {
+      "reciter_id": 25,
+      "reciter_name_ar": "علي الحجاج السويسي",
+      "reciter_name_en": "Ali_Hajjaj_AlSuesy",
+      "reciter_url_identifier": "Ali_Hajjaj_AlSuesy_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/ali_hajjaj_alsuesy.jpg"
+    },
+    {
+      "reciter_id": 26,
+      "reciter_name_ar": "علي جابر",
+      "reciter_name_en": "Ali Jaber",
+      "reciter_url_identifier": "Ali_Jaber_64kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/ali_jaber.jpg"
+    },
+    {
+      "reciter_id": 27,
+      "reciter_name_ar": "فارس عباد",
+      "reciter_name_en": "Fares Abbad",
+      "reciter_url_identifier": "Fares_Abbad_64kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/fares_abbad.jpg"
+    },
+    {
+      "reciter_id": 28,
+      "reciter_name_ar": "ماهر المعيقلي",
+      "reciter_name_en": "Maher Al Muaiqly",
+      "reciter_url_identifier": "MaherAlMuaiqly128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/maher_al_muaiqly.jpg"
+    },
+    {
+      "reciter_id": 29,
+      "reciter_name_ar": "محمد أيوب",
+      "reciter_name_en": "Muhammad Ayyoub",
+      "reciter_url_identifier": "Muhammad_Ayyoub_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/muhammad_ayyoub.jpg"
+    },
+    {
+      "reciter_id": 30,
+      "reciter_name_ar": "محمد جبريل",
+      "reciter_name_en": "Muhammad Jibreel",
+      "reciter_url_identifier": "Muhammad_Jibreel_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/muhammad_jibreel.jpg"
+    },
+    {
+      "reciter_id": 31,
+      "reciter_name_ar": "محمد صديق المنشاوي (تجويد)",
+      "reciter_name_en": "Minshawy Mujawwad",
+      "reciter_url_identifier": "Minshawy_Mujawwad_192kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/minshawy.jpg"
+    },
+    {
+      "reciter_id": 32,
+      "reciter_name_ar": "محمد صديق المنشاوي (ترتيل)",
+      "reciter_name_en": "Minshawy Murattal",
+      "reciter_url_identifier": "Minshawy_Murattal_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/minshawy.jpg"
+    },
+    {
+      "reciter_id": 33,
+      "reciter_name_ar": "محمد صديق المنشاوي",
+      "reciter_name_en": "Menshawi",
+      "reciter_url_identifier": "Menshawi_32kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/minshawy.jpg"
+    },
+    {
+      "reciter_id": 34,
+      "reciter_name_ar": "محمد الطبلاوي",
+      "reciter_name_en": "Mohammad al Tablaway",
+      "reciter_url_identifier": "Mohammad_al_Tablaway_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/mohammad_al_tablaway.jpg"
+    },
+    {
+      "reciter_id": 35,
+      "reciter_name_ar": "محمد عبد الكريم",
+      "reciter_name_en": "Muhammad AbdulKareem",
+      "reciter_url_identifier": "Muhammad_AbdulKareem_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/muhammad_abdulkareem.jpg"
+    },
+    {
+      "reciter_id": 36,
+      "reciter_name_ar": "محمود الحصري (المعلم)",
+      "reciter_name_en": "Husary (Muallim)",
+      "reciter_url_identifier": "Husary_Muallim_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/husary.jpg"
+    },
+    {
+      "reciter_id": 37,
+      "reciter_name_ar": "محمود الحصري (تجويد)",
+      "reciter_name_en": "Husary Mujawwad",
+      "reciter_url_identifier": "Husary_128kbps_Mujawwad",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/husary.jpg"
+    },
+    {
+      "reciter_id": 38,
+      "reciter_name_ar": "محمود الحصري (ترتيل)",
+      "reciter_name_en": "Husary",
+      "reciter_url_identifier": "Husary_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/husary.jpg"
+    },
+    {
+      "reciter_id": 39,
+      "reciter_name_ar": "محمود علي البنا",
+      "reciter_name_en": "Mahmoud Ali Al-Banna",
+      "reciter_url_identifier": "mahmoud_ali_al_banna_32kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/mahmoud_ali_al_banna.jpg"
+    },
+    {
+      "reciter_id": 40,
+      "reciter_name_ar": "محسين القاسم",
+      "reciter_name_en": "Muhsin Al Qasim",
+      "reciter_url_identifier": "Muhsin_Al_Qasim_192kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/muhsin_al_qasim.jpg"
+    },
+    {
+      "reciter_id": 41,
+      "reciter_name_ar": "مصطفي إسماعيل",
+      "reciter_name_en": "Mustafa Ismail",
+      "reciter_url_identifier": "Mustafa Ismail_48kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/mustafa_ismail.jpg"
+    },
+    {
+      "reciter_id": 42,
+      "reciter_name_ar": "هاني الرفاعي",
+      "reciter_name_en": "Hani Rifai",
+      "reciter_url_identifier": "Hani_Rifai_192kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/hani_rifai.jpg"
+    },
+    {
+      "reciter_id": 43,
+      "reciter_name_ar": "ورض إبراهيم الدوسري",
+      "reciter_name_en": "(Warsh) Ibrahim Al-Dosary",
+      "reciter_url_identifier": "warsh/warsh_ibrahim_aldosary_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/ibrahim_al_dosary.jpg"
+    },
+    {
+      "reciter_id": 44,
+      "reciter_name_ar": "ورض ياسين الجزائري",
+      "reciter_name_en": "(Warsh) Yassin Al-Jazaery",
+      "reciter_url_identifier": "warsh/warsh_yassin_al_jazaery_64kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/yassin_al_jazaery.jpg"
+    },
+    {
+      "reciter_id": 45,
+      "reciter_name_ar": "ياسر الدوسري",
+      "reciter_name_en": "Yasser_Ad-Dussary",
+      "reciter_url_identifier": "Yasser_Ad-Dussary_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/yasser_ad_dussary.jpg"
+    },
+    {
+      "reciter_id": 46,
+      "reciter_name_ar": "ياسر سلامة",
+      "reciter_name_en": "Yaser Salamah",
+      "reciter_url_identifier": "Yaser Salamah_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/yaser_salamah.jpg"
+    },
+    {
+      "reciter_id": 47,
+      "reciter_name_ar": "ناصر القطامي",
+      "reciter_name_en": "Nasser_Alqatami",
+      "reciter_url_identifier": "Nasser_Alqatami_128kbps",
+      "reciter_image_url_reference": "file:///android_asset/reciter_thumbnail_image/nasser_alqatami.jpg"
+    }
+  ]
+}

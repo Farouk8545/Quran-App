@@ -13,7 +13,7 @@
 
 
     <application
-        android:name=".hilt.Application"
+        android:name=".core.application.Application"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -24,12 +24,13 @@
         android:theme="@style/Theme.QuranApp"
         tools:targetApi="31">
         <service
-            android:name=".player.AudioPlayerService"
-            android:exported="false"
-            android:foregroundServiceType="mediaPlayback" />
-        <receiver
-            android:name=".player.NotificationActionReceiver"
-            android:exported="false" />
+            android:name=".domain.new_player.PlaybackService"
+            android:foregroundServiceType="mediaPlayback"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="androidx.media3.session.MediaSessionService"/>
+            </intent-filter>
+        </service>
         <activity
             android:name=".MainActivity"
             android:exported="true"

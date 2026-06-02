@@ -15,3 +15,5 @@ val LavenderBackground = Color(0xFFf6f5ff)
 val WarmGray = Color(0xFFF3F2EE)
 val LightGold = Color(0xFFFFE08A)
 val DarkGold = Color(0xFFB8860B)
+
+val WhiteSmoke = Color(0xFFF5F5F7)

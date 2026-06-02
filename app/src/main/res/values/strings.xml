@@ -66,4 +66,9 @@
     <string name="give_camera_access">Give camera access for better visualization of the qibla</string>
     <string name="revelation_type">Revelation Type</string>
     <string name="surah_name">Surah Name</string>
+    <string name="meta_data_error_loading_message">Reciters not found</string>
+    <string name="surah_meta_data_error_loading_message">Error loading Surah name</string>
+    <string name="next_error_message">You are listening to the last surah</string>
+    <string name="previous_error_message">You are listening to the first surah</string>
+    <string name="no_active_playlist_error_message">You have not chose a playlist</string>
 </resources>
